@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name="referrer" content="no-referrer">
+    <meta charset="UTF-8">
+    <title>My-FM</title>
+    <link rel="stylesheet" type="text/css" href="./css/my-fm.css" />
+    <style>
+        @font-face {font-family: "iconfont";
+            src: url('./icon-font/iconfont.eot'); /* IE9*/
+            src: url('./icon-font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./icon-font/iconfont.woff') format('woff'), /* chrome, firefox */
+            url('./icon-font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+            url('./icon-font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+            font-family:"iconfont" !important;
+            font-size:16px;
+            font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="music">
+        <div class="container">
+            <div class="header">
+                <ul class="clear-fix">
+                    <li><span class="iconfont option">&#xe67d;</span></li>
+                    <li class="info">
+                        <div class="music-title"></div>
+                        <div class="music-artist"></div>
+                    </li>
+                    <li><a class="share" href="" target="_blank"><span class="iconfont">&#xe62e;</span></a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="channels-list channels-none">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="pictrue"><img class="rotation" /><span></span></div>
+                <div class="lyric none">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="option-btn">
+                <ul class="clear-fix">
+                    <li><div><span class="iconfont like like-click">&#xe601;</span></div></li>
+                    <li><a class="download" href=""><span class="iconfont">&#xe6c8;</span></a></li>
+                    <li><span class="iconfont single">&#xe62f;</span></li>
+                    <li><span class="iconfont lrc">&#xe671;</span></li>
+                </ul>
+            </div>
+            <div class="controller">
+                <ul class="clear-fix">
+                    <li><span class="iconfont play">&#xe603;</span></li>
+                    <li><span class="iconfont next">&#xe602;</span></li>
+                    <li><div class="progress-bar"><span class="btn-bar"></span></div></li>
+                </ul>
+                <audio autoplay >你该换浏览器啦！</audio>
+            </div>
+        </div>
+    </div>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

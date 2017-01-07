@@ -1,0 +1,237 @@
+body{
+	background: #ccc;
+}
+a{
+	text-decoration: none;
+}
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Microsoft YaHei UI";
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	color: #fff;
+}
+.clear-fix:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+li{
+	list-style-type: none;
+}
+#music{
+	width: 350px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	border-radius: 5px;
+	box-shadow: 0 0 5px 1px #ccc;
+}
+#music .container {
+	border-radius: 5px;
+	overflow: hidden;
+	background: rgba(0,0,0,0.9);
+}
+#music .header{
+	border-bottom: #eee 1px solid;
+}
+#music .header ul>li{
+	padding: 10px 0 10px 20px;
+	float: left;
+}
+#music .header ul>li:last-child{
+	padding-right: 20px;
+	float: right;
+}
+#music .header span{
+	font-size: 25px;
+}
+#music .header .info{
+	max-width: 200px;
+	overflow: hidden;
+}
+#music .header .music-title{
+	font-size: 12px;
+	white-space:nowrap;
+}
+#music .header .music-artist{
+	font-size: 8px;
+	white-space:nowrap;
+	color:#666;
+}
+#music .main{
+	position: relative;
+	text-align: center;
+	padding:30px;
+
+}
+#music .channels-list{
+	position: absolute;
+	width: 100px;
+	top: 0;
+	left: 0;
+	height: 270px;
+	z-index: 5;
+	background:#fff;
+	overflow-y: scroll;
+}
+
+#music .channels-show{
+	height: 270px;
+	box-shadow: 1px 1px 1px 1px #fff;
+	transition: 0.5s;
+}
+#music .channels-none{
+	height: 0;
+	transition: 0.5s;
+}
+#music .channels-list::-webkit-scrollbar{
+	width: 10px;
+	background: #fff;
+}
+#music .channels-list::-webkit-scrollbar-thumb {
+	background-color:#333;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius:10px;
+}
+#music .channels-list li{
+	cursor: pointer;
+	font-size: 12px;
+	color: #333;
+	padding:5px 17px;
+	text-align: left;
+}
+#music .channels-list li:hover{
+	background: #333;
+	color: #fff;
+}
+
+#music img{
+	display: inline-block;
+	border: 20px solid #000;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0 0 5px 1px #333;
+	border-radius: 50%;
+}
+
+#music .option-btn{
+	width: 218px;
+	margin: 0 auto;
+	height: 38px;
+}
+#music .option-btn .active {
+
+	color:red;
+}
+#music .option-btn span{
+	font-size: 18px;
+	color: #666;
+}
+#music .option-btn ul>li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 18px;
+}
+#music .option-bar ul>li>div{
+	position: absolute;
+	top: 100px;
+}
+#music .controller{
+	width: 310px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#music .controller ul>li{
+	float: left;
+	margin-left: 15px;
+}
+#music .controller .play{
+	font-size: 35px;
+	color: #fff;
+}
+#music .controller .next{
+	font-size: 25px;
+	color: #fff;
+}
+#music .progress-bar{
+	margin-top: 22px;
+	width: 200px;
+	height: 6px;
+	border-radius: 5px;
+	background: #ccc;
+}
+#music .btn-bar{
+	position: relative;
+	display: block;
+	height: 6px;
+	border-radius: 5px;
+	background: #D52B2B;
+}
+#music .btn-bar:after{
+	content: "";
+	position: absolute;
+	top:-4px;
+	right:-1px;
+	width: 5px;
+	height: 10px;
+	border-radius: 4px;
+	background:#fff;
+	border: 1px solid #666;
+	display: block;
+}
+#music .lyric{
+	position: relative;
+	height: 204px;
+	overflow: hidden;
+}
+#music .lyric ul{
+	position: absolute;
+	width: 100%;
+}
+#music .lyric li{
+	width: 100%;
+	font-size:12px;
+	padding: 10px;
+	color: #ccc;
+}
+#music .lyric .lyric-active{
+	font-size: 14px;
+	color: #fff;
+}
+#music .none{
+	display: none;
+}
+#music .option-btn .btn-active{
+	color: #fff;
+}
+
+@-webkit-keyframes rotation{
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
+@keyframes rotation{
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
+
+#music .rotation{
+	animation: rotation 60s linear infinite;
+	-moz-animation: rotation 60s linear infinite;
+	-webkit-animation: rotation 60s linear infinite;
+	-o-animation: rotation 60s linear infinite;
+}
+@-webkit-keyframes heart {
+	0% {font-size: 18px;}
+	50% {font-size: 22px}
+	100% {font-size: 18px}
+}

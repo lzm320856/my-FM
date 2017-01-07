@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jquery.min.js" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+    </properties>
+    <CLASSES>
+      <root url="file://D:/WebstormProjects/task39/JS/lib/jquery.min.js" />
+    </CLASSES>
+    <DOCUMENTATION>
+      <root url="http://api.jquery.com" />
+    </DOCUMENTATION>
+    <SOURCES />
+  </library>
+</component>
