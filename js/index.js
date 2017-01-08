@@ -108,7 +108,7 @@ Music.prototype = {
         $("#music .next").on("click", function () {              //控制下一曲开关
             that._getSong();
         });
-        $(".progress-bar").on("mousedown", function (event) {      //调整进度
+        $(".progress-bar").on("click", function (event) {      //调整进度
             var distance = event.clientX - $(this).offset().left;
             var percentage = distance / $(this).width();
             myAudio.currentTime = myAudio.duration * percentage;

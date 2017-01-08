@@ -52,6 +52,7 @@ li{
 	font-size: 25px;
 }
 #music .header .info{
+	padding-top: 12px;
 	max-width: 200px;
 	overflow: hidden;
 }
@@ -135,14 +136,16 @@ li{
 	box-shadow: 0 0 5px 1px #333;
 	border-radius: 50%;
 }
-
+#music .picture{
+	border-radius: 50%;
+	overflow: hidden;
+}
 #music .option-btn{
 	width: 218px;
 	margin: 0 auto;
 	height: 38px;
 }
 #music .option-btn .active {
-
 	color:red;
 }
 #music .option-btn span{
@@ -163,8 +166,7 @@ li{
 	width: 310px;
 	height: 50px;
 	line-height: 50px;
-	margin: 0 auto;
-	margin-bottom: 20px;
+	margin: 0 auto 20px auto;
 }
 #music .controller ul>li{
 	float: left;
@@ -195,8 +197,8 @@ li{
 #music .btn-bar:after{
 	content: "";
 	position: absolute;
-	top:-4px;
-	right:-1px;
+	right: 0;
+	top:-3px;
 	width: 5px;
 	height: 10px;
 	border-radius: 4px;
