@@ -39,6 +39,8 @@ li{
 }
 #music .header{
 	border-bottom: #eee 1px solid;
+	z-index: 100;
+
 }
 #music .header ul>li{
 	padding: 10px 0 10px 20px;
@@ -70,6 +72,22 @@ li{
 	text-align: center;
 	padding:30px;
 
+}
+#music .needle{
+	background: url("../images/needle.png") no-repeat left -6px;
+	background-size: contain;
+	width: 100px;
+	height: 100px;
+	top: 0;
+	left: 55%;
+	position: absolute;
+	z-index: 10;
+	transform-origin: 14% 0;
+	transform: rotate(-3deg);
+	transition: 0.5s;
+}
+#music .needle-rotate{
+	transform: rotate(-18deg);
 }
 #music .option-title{
 	position: absolute;
@@ -135,6 +153,10 @@ li{
 	height: 200px;
 	box-shadow: 0 0 5px 1px #333;
 	border-radius: 50%;
+	animation: rotation 60s linear infinite forwards;
+	-moz-animation: rotation 60s linear infinite forwards;
+	-webkit-animation: rotation 60s linear infinite forwards;
+	-o-animation: rotation 60s linear infinite forwards;
 }
 #music .picture{
 	border-radius: 50%;
@@ -242,13 +264,5 @@ li{
 }
 
 #music .rotation{
-	animation: rotation 60s linear infinite;
-	-moz-animation: rotation 60s linear infinite;
-	-webkit-animation: rotation 60s linear infinite;
-	-o-animation: rotation 60s linear infinite;
-}
-@-webkit-keyframes heart {
-	0% {font-size: 18px;}
-	50% {font-size: 22px}
-	100% {font-size: 18px}
+	animation-play-state: paused;
 }

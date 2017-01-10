@@ -59,14 +59,16 @@ Music.prototype = {
         });
 
         $(".lrc").on("click", function () {                  //控制歌词按钮开关主界面的碟片/歌词模式
-            if ($("#music .pictrue").hasClass("none")) {
+            if ($("#music .picture").hasClass("none")) {
                 $(this).removeClass("btn-active");
-                $("#music .pictrue").removeClass("none");
+                $("#music .picture").removeClass("none");
+                $("#music .needle").removeClass("none");
                 $("#music .lyric").addClass("none");
             } else {
                 $(this).addClass("btn-active");
                 $("#music .lyric").removeClass("none");
-                $("#music .pictrue").addClass("none");
+                $("#music .picture").addClass("none");
+                $("#music .needle").addClass("none");
             }
         });
 
@@ -253,11 +255,13 @@ Music.prototype = {
         if (this.myAudio.paused) {
             this.myAudio.play();
             $(".play").html("&#xe603");
-            $("#music img").addClass("rotation");
+            $("#music img").removeClass("rotation");
+            $("#music .needle").removeClass("needle-rotate")
         } else {
             this.myAudio.pause();
             $(".play").html("&#xe60d");
-            $("#music img").removeClass("rotation");
+            $("#music img").addClass("rotation");
+            $("#music .needle").addClass("needle-rotate")
         }
     },
 
